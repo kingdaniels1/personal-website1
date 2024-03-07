@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Daniels - Daniel Adjei</title>
+    
+    <script src="https://kit.fontawesome.com/8b5178bfae.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-top: 45px;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            color: white;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        span {
+            color: rgb(232, 137, 13);
+        }
+        nav ul li {
+            list-style-type: none;
+            display: inline-flex;
+            padding: 10px 25px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        nav ul li a:hover {
+            color: rgb(232, 137, 13);
+            transition: .4s;
+        }
+        .btn {
+            background-color: rgb(232, 137, 13);
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+        }
+        .btn:hover {
+            transform: scale(1.2);
+        }
+        @media (min-width:300px){
+            .body {
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--hero section start-->
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Truth<span>Reigns</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        
+        <div class="content">
+            <h4>Hello Here</h4>
+            <h1>Truth Daniels</h1>
+            <h3>Registered Nurse, Poet, Graphic Designer, Web Developer</h3>
+            <style>
+                .content {
+                    position: absolute;
+                    top: 50%;
+                    left: 8%;
+                    transform: translateY(-50%);
+                }
+                h1 {
+                    color: white;
+                    margin: 20px 0px 20px;
+                    font-size: 75px;
+                }
+                h3 {
+                    color: white;
+                    font-size: 25px;
+                    margin-bottom: 50px;
+                }
+                h4 {
+                    color: rgb(232, 137, 13);
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                }
+            </style>
+        </div>
+    </div>
+    <!--About Section-->
+    <section class="about">
+        <div class="main">
+            <img src="img1.jpg" style="border-radius: 50px;">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>RN</span>, Poet, <span>Developer</span> & Designer</h5>
+                <p>I'm a registered nurse dedicated to providing compassionate care and making a positive impact. 
+                As a poet, I use words to express emotions, share stories, and connect deeply with others. 
+                In the world of design, I bring ideas to life through visual storytelling, 
+                crafting compelling visuals and brand identities. 
+                As a front-end web developer, I thrive on transforming concepts into interactive and 
+                visually appealing websites. Join me on this multifaceted journey where healthcare, poetry, design,
+                 and technology converge, and where creativity meets compassion, and innovation meets heartfelt expression. 
+                Thank you for being a part of my story.</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+        <style>
+            .about {
+                width: 100%;
+                padding: 100px 0px;
+                background-color: #000000;
+            }
+            .about img{
+                height: auto;
+                width: 430px;
+            }
+            .about-text {
+                width: 550px;
+            }
+            .main {
+                width: 1130px;
+                max-width: 95%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .about-text h2 {
+                color: white;
+                font-size: 75px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            .about-text h5 {
+                color: white;
+                letter-spacing: 2px;
+                font-size: 22px;
+                margin-bottom: 25px;
+                text-transform: capitalize;
+            }
+            .about-text p{
+                color: rgba(250, 231, 204, 0.8);
+                letter-spacing: 1px;
+                line-height: 28px;
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+            button {
+                background-color: rgb(232, 137, 13);
+                color: white;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 13px 30px;
+                border-radius: 30px;
+                transition: .4s;
+            }
+            button:hover {
+                background-color: transparent;
+                border: 2px solid rgb(232, 137, 13);
+            }
+        </style>
+    </section>
+    <!--Service Section-->
+    <div class="service">
+        <div class="title">
+            <h2>Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-computer"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Building interactive and user-friendly websites, 
+                        combining creativity and technical skills 
+                        to craft seamless online experiences.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-nurse"></i>
+                <h5>Nursing</h5>
+                <div class="pra">
+                    <p>Providing dedicated and compassionate healthcare 
+                        services including clinical care, 
+                        health education, and wellness consultations.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-microphone"></i>
+                <h5>Poetry</h5>
+                <div class="pra">
+                    <p>Creating custom poems for special 
+                        occasions and collaborating on literary projects, 
+                        providing a unique and heartfelt storytelling experience through verse.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-pen-nib"></i>
+                <h5>Graphic Design</h5>
+                <div class="pra">
+                    <p>Bringing visions to life with visually stunning and impactful designs, 
+                        including brand identities, marketing materials, and 
+                        digital graphics.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <style>
+                .service {
+                    background-color: #000000;
+                    width: 100%;
+                    padding: 100px 0px;
+                }
+                .title h2 {
+                    color: white;
+                    font-size: 75px;
+                    width: 1130px;
+                    margin: 25px auto;
+                    text-align: center;
+                }
+                .box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 400px;
+                }
+                .card{
+                    height: 365px;
+                    width: 335px;
+                    padding: 20px 35px;
+                    background: #191919;
+                    border-radius: 20px;
+                    margin: 15px;
+                    position: relative;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                .card i{
+                    font-size: 40px;
+                    display: block;
+                    text-align: center;
+                    margin: 20px 0px;
+                    color: rgb(232, 137, 13);
+                }
+                h5 {
+                    color: white;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                .pra p{
+                    color: rgb(252, 214, 165);
+                    font-size: 14px;
+                    line-height: 27px;
+                    margin-bottom: 25px;
+                }
+                .card .button {
+                    background-color: rgb(232, 137, 13);
+                    color: white;
+                    text-decoration: none;
+                    border: 2px solid transparent;
+                    font-weight: bold;
+                    padding: 9px 22px;
+                    border-radius: 30px;
+                    transition: .4s;
+                }
+                .card .button:hover{
+                    background-color: transparent;
+                    border: 2px solid rgb(232, 137, 13);
+                    cursor: pointer;
+                }
+            </style>
+        </div>
+    </div>    
+    <!-- Contact Me -->
+    <div class="contact-me">
+        <p>Contact me on </p>
+        <a class="button-two" href="#">Click Here</a>
+
+        <style>
+            .contact-me {
+                width: 100%;
+                height: 290px;
+                background: #191919;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .contact-me p{
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+            .contact-me .button-two {
+                background-color: rgb(232, 137, 13);
+                color: white;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 13px 30px;
+                border-radius: 30px;
+                transition: .4s;
+            }
+            .contact-me .button-two:hover {
+                background-color: transparent;
+                border: 2px solid rgb(232, 137, 13);
+                cursor: pointer;   
+            }
+        </style>
+    </div>
+    
+    <!--Footer Start-->
+    <footer>
+        <p>Truth  Daniels</p>
+        <p>Life is very beautiful depending on how you look at it</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+        <p class="end">CopyRight by Daniel Adjei-Opoku - 2024</p>
+
+        <style>
+            footer {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                background: #101010;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            footer p:nth-child(1) {
+                font-size: 30px;
+                color: white;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            footer p:nth-child(2) {
+                color: white;
+                width: 500px;
+                font-size: 17px;
+                text-align: center;
+                line-height: 26px;
+            }
+            .socials {
+                display: flex;
+            }
+            .socials a{
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgb(232, 137, 13);
+                border-radius: 50%;
+                margin: 22px 10px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+            .socials a:hover {
+                background-color: transparent;
+                border: 2px solid rgb(232, 137, 13);
+                cursor: pointer;  
+                color: white;
+                transform: scale(1.3);
+                transition: .3s;
+            }
+            .end {
+                position: absolute;
+                color: rgb(232, 137, 13);
+                bottom: 35px;
+                font-size: 14px;
+            }
+        </style>
+    </footer>
+</body>
+</html>
